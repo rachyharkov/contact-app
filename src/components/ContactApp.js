@@ -1,6 +1,7 @@
 import React from "react";
 import ContactList from "./ContactList";
 import { getData } from "../utils/data";
+import ContactInput from "./ContactInput";
 
 class ContactApp extends React.Component {
 
@@ -40,6 +41,8 @@ class ContactApp extends React.Component {
         return(
             <div className="contact-app">
                 <h1>Daftar Kontak</h1>
+                <h2>Tambah Kontak</h2>
+                <ContactInput addContact={this.onAddContactHandler}/>
                 <ContactList contacts={this.state.contacts} onDelete={this.onDeleteHandler}/>
             </div>
         )

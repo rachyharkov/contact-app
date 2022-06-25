@@ -29,7 +29,7 @@ class ContactInput extends React.Component {
         this.setState((prevState) => {
             return {
                 ...prevState,
-                name: event.target.value
+                tag: event.target.value
             }
         })
     }
